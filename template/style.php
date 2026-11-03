@@ -1,53 +1,21 @@
+<?php
+$prefix = file_exists('library.php') ? './' : '../';
+?>
+<!-- Responsive & Modern Layout Helper Styles -->
+<link rel="stylesheet" href="<?php echo $prefix; ?>bootstrap/css/style.css">
 <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 1000px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color:#FFFFFF;
-      height: 100%;
-    }
-	
-    .sidenava {
-      padding-top: 20px;
-      background-color:#CCCCCC;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color:#FFFFFF;
-
-      color:#FFFFFF;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 1000px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-    .row {
-    margin-right: 0;
-    margin-left: 0;
+/* Clean layout overrides */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
 }
-	.container {
-    padding-right: 0px;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
+.row.content {
+  height: auto !important;
+  min-height: 550px;
 }
-    .navbar-collapse {
-    padding-right: 15px;
-    padding-left: 5px;
-  </style>
+.sidenav, .sidenava {
+  height: auto !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+</style>
